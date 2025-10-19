@@ -2,12 +2,35 @@ package com.parcial.dos.parcialdos.account.dto;
 
 import java.math.BigDecimal;
 
-public class AccountRequestDTO {
+public class AccountResponseDTO {
+    private Long id;
     private String numeroCuenta;
     private String dueno;
     private BigDecimal balanceActual;
+    private boolean active;
 
-    // Getters y Setters
+
+    public AccountResponseDTO() {
+    }
+
+
+    public AccountResponseDTO(Long id, String numeroCuenta, String dueno, BigDecimal balanceActual, boolean active) {
+        this.id = id;
+        this.numeroCuenta = numeroCuenta;
+        this.dueno = dueno;
+        this.balanceActual = balanceActual;
+        this.active = active;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getNumeroCuenta() {
         return numeroCuenta;
     }
@@ -30,5 +53,13 @@ public class AccountRequestDTO {
 
     public void setBalanceActual(BigDecimal balanceActual) {
         this.balanceActual = balanceActual;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }
