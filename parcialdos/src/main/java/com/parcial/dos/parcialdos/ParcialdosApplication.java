@@ -1,4 +1,4 @@
-package parcialdos.src.main.java.com.parcial.dos.parcialdos;
+package com.parcial.dos.parcialdos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

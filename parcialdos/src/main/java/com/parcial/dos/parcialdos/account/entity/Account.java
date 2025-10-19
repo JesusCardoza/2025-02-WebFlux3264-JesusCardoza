@@ -1,4 +1,4 @@
-package parcialdos.src.main.java.com.parcial.dos.parcialdos.account.entity;
+package com.parcial.dos.parcialdos.account.entity;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
